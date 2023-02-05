@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Theme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ <header>
+    <div class="logo">Modern Theme</div>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+ <nav class="nav-bar active">
+    <ul>
+        <li>
+            <a href="">Home</a>
+        </li>
+        <li>
+            <a href="">Features</a>
+        </li>
+        <li>
+            <a href="">Pricing</a>
+        </li>
+        <li>
+            <a href="">About</a>
+        </li>
+        <li>
+            <a href="">Contact</a>
+        </li>
+    </ul>
+ </nav>
+ </header>  
+
+ <script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function() {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+ </script>
+</body>
+</html>
