@@ -5,6 +5,7 @@
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    background-color: #11101b;
 }
 
 body {
@@ -111,5 +112,94 @@ header {
         margin-bottom: 12px;
     }
 }
+h1 {
+    color: #fefefe;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 15%;
+}
 
-    
+
+
+@media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+.video-player {
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    left: 10%;
+    top: 80%;
+}
+
+@media only screen and (max-width: 900px) {
+    .video-player {
+        width: 280px;
+        height: 50%;
+        padding-left: 0%;
+        padding-top: 5px;
+    }
+}
+ 
+.questions-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 700px;
+}
+
+
+.question button{
+    width: 100%;
+    background-color: #11101b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+    border:none;
+    outline: none;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+}
+.question p{
+    font-size: 22px;
+    max-height: 0;
+    opacity: 0;
+    line-height: 1.5;
+    color: #fefefe;
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+.d-arrow{
+    transition: transform 0.5s ease-in ;
+    color: #fff;
+}
+
+/*add this class when click*/
+.question p.show{
+    max-height: 200px; 
+    opacity: 1;
+    padding:0px 15px 30px 15px;
+}
+.question button .d-arrow.rotate{
+    transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 900px) {
+    .questions-container {
+    padding-top: 480px;
+    width: 85%;
+    }
+    .question button {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
