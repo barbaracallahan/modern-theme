@@ -275,13 +275,15 @@ h1 {
 @media only screen and (max-width: 900px) {
     
 .container {
-        width: 300px;
-        padding-left: 0%;
-        padding-right: 0px;
-        padding-top: 80px;
+        max-width: 320px;
+        max-height: 20px;
+        padding-top: 50px;
+        padding-bottom: 280px;
 }
+
    .slider img {
-    height: 300px;
+    height: px;
+    max-height: 230px;
     
    }
 }
@@ -299,33 +301,30 @@ h1 {
     }
 }
 
-.quote-container {
-    height: 50vh;
-    width: 100%;
-    background-color: #11101b;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    padding: 32px;
-    box-sizing: border-box;
-
-}
-
-.quote-container .quote{
-    max-width: 700px;
-    position: relative;
-}
-
-.quote-container .quote-content {
+h2 {
+    text-align: center;
     font-size: 30px;
+    font-weight: 400;
     color: #fefefe;
+    margin: 180px 150px;
 }
 
-.quote-container .quote-autor {
-    font-size: 18px;
-    color: yellow;
-    border-top: 1px solid #93e0ff ;
-    padding: 16px 32px;
-    margin-top: 20px;
+@media only screen and (max-width: 900px) {
+    
+    h2 {
+         text-align: center;
+         font-size: 22px;
+         margin: 40px 20px;
+    }
+}
+
+p {
+    font-size: 40px;
+    color: #fefefe;
+    font-weight: 700;
+}
+
+.questions-container2 {
+    margin: 150px;
+    background-color: #fff;
 }
