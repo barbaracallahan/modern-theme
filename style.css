@@ -325,6 +325,34 @@ p {
 }
 
 .questions-container2 {
-    margin: 150px;
+    margin: 50px 150px;
     background-color: #fff;
+}
+
+.footer-contacts {
+    font-size: 60px;
+    color: #fefefe;
+    font-weight: 700;
+    margin-left: 200px;
+    margin-top: 200px;
+}
+
+.footer-email {
+    font: 80px;
+    margin: 200px;
+    margin-top: auto;
+}
+
+.footer-links {
+    text-align: center;
+    display: inline;
+    position: relative;
+
+    
+}
+.footer-links ul li {
+    display: inline;
+    padding: 5px;
+    color: #fefefe;
+
 }
